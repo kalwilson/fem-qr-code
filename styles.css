@@ -15,10 +15,6 @@ html {
   box-sizing: inherit;
 }
 
-body {
-  margin: 0;
-}
-
 b,
 strong {
   font-weight: bolder;
@@ -72,7 +68,7 @@ button,
 [type='button'],
 [type='reset'],
 [type='submit'] {
-  appearance: button;
+  appearance: auto;
   -webkit-appearance: button;
 }
 
@@ -90,7 +86,7 @@ progress {
 }
 
 [type='search'] {
-  appearance: textfield;
+  appearance: auto;
   -webkit-appearance: textfield;
   outline-offset: -0.125rem;
 }
@@ -100,7 +96,7 @@ progress {
 }
 
 ::-webkit-file-upload-button {
-  appearance: button;
+  appearance: auto;
   -webkit-appearance: button;
   font: inherit;
 }
@@ -188,15 +184,6 @@ section {
   display: block;
 }
 
-/* === BODY */
-body {
-  padding: 0;
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: 'Outfit';
-}
-
 /* === VARIABLES */
 
 :root {
@@ -227,9 +214,17 @@ body {
   /* === RADIUS */
   --radius-sm: 0.625rem;
   --radius-md: 1.25rem;
+
+  /* === SHADOW */
+  --card-shadow: 0 25px 25px 0 rgba(0, 0, 0, 4.77%);
 }
 
 body {
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Outfit', sans-serif;
   min-height: 100vh;
   min-height: 100dvh;
   display: flex;
@@ -254,11 +249,12 @@ body {
   background-color: var(--color-main-100);
   padding: var(--space-200) var(--space-200) var(--space-500) var(--space-200);
   border-radius: var(--radius-md);
-  box-shadow: 0 1.5625rem 1.5625rem 0 rgba(0, 0, 0, 4.77%);
+  box-shadow: var(--card-shadow);
   margin: 0 auto;
 }
 
 .card__section {
+  width: 100%;
   max-width: 18rem;
   display: flex;
   flex-flow: column nowrap;
@@ -272,7 +268,8 @@ body {
 }
 
 .card__img {
-  width: 18rem;
+  width: 100%;
+  max-width: 18rem;
   height: auto;
   border-radius: var(--radius-sm);
 }
@@ -282,6 +279,7 @@ body {
   font-weight: var(--font-weight-bold);
   letter-spacing: var(--letter-spacing-none);
   line-height: var(--line-height-sm);
+  color: var(--color-main-900);
   margin: 0;
 }
 
