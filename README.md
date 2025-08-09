@@ -28,8 +28,8 @@ Mobile view:
 
 ### Links
 
-- Solution URL: [QR Code Component repo](https://github.com/kalwilson/fem-qr-code)
-- Live Site URL: [Add live site URL here](https://kalwilson.github.io/fem-qr-code/)
+- Solution Repo: [You're already here!](https://github.com/kalwilson/fem-qr-code)
+- Live Site: [Click Here](https://kalwilson.github.io/fem-qr-code/)
 
 ## My process
 
