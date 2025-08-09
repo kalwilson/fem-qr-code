@@ -229,14 +229,10 @@ body {
   min-height: 100dvh;
   display: flex;
   flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
   background-color: var(--color-main-300);
   padding: 0.125rem;
-}
-
-.main {
-  display: flex;
-  align-items: center;
-  flex: 1;
 }
 
 /* === CARD STYLING */
